@@ -1,5 +1,5 @@
 from .repositories import OrderRepository
-from .grpc_client import UserGrpcClient
+from apps.core.grpc.grpc_client import UserGrpcClient
 
 class OrderService:
     def __init__(self):

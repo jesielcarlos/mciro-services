@@ -1,4 +1,4 @@
-from system1.apps.core.models import Users
+from apps.core.models import Users
 
 
 class UserRepository:

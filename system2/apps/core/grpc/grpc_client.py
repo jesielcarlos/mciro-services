@@ -1,6 +1,6 @@
 import grpc
-from users.grpc.user_pb2 import UserIdRequest
-from users.grpc.user_pb2_grpc import UserServiceStub
+from .user_pb2 import UserIdRequest
+from .user_pb2_grpc import UserServiceStub
 
 class UserGrpcClient:
     def __init__(self, host='localhost', port=50051):

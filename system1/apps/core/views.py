@@ -1,7 +1,7 @@
-from system1.apps.core.models import Users
+from apps.core.models import Users
 from django.http import JsonResponse
 from django.views import View
-from system1.apps.core.services import UserService
+from apps.core.services import UserService
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 import json
