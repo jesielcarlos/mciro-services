@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-import apps.core.urls
+from apps.core.views import OrderView
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(apps.core.urls, namespace="api")),
+    path('orders/', OrderView.as_view()),
 ]

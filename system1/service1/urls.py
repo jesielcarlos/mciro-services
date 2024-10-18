@@ -1,8 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
-import apps.core.urls
+from apps.core.views import UserView
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(apps.core.urls, namespace="api")),
+    path('users/<int:user_id>/', UserView.as_view()),
+    path('users/', UserView.as_view()),
 ]
